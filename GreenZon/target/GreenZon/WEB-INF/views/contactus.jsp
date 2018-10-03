@@ -1,6 +1,5 @@
-<script
-	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <div class="row" id="contatti">
 	<div class="container">
@@ -18,19 +17,19 @@
 				<br />
 			</div>
 			<div class="col-md-6">
-				<h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTATTACI</h2>
+				<h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTACT US</h2>
 				<form action="">
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="form-group">
 								<input type="text" class="form-control mt-2"
-									placeholder="Nome/Società" required>
+									placeholder="Nome" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
 								<input type="text" class="form-control mt-2"
-									placeholder="Oggetto" required>
+									placeholder="City" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -42,17 +41,17 @@
 						<div class="col-lg-6">
 							<div class="form-group">
 								<input type="number" class="form-control mt-2"
-									placeholder="Telefono" required>
+									placeholder="Ph.No" required>
 							</div>
 						</div>
 						<div class="col-12">
 							<div class="form-group">
 								<textarea class="form-control" id="exampleFormControlTextarea1"
-									placeholder="Inserisci testo" rows="3" required></textarea>
+									placeholder="Your Mind" rows="3" required></textarea>
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="btn btn-light" type="submit">Invia</button>
+							<button class="btn btn-light" type="submit">Submit</button>
 						</div>
 					</div>
 				</form>

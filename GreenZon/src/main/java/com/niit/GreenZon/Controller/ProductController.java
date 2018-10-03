@@ -28,7 +28,7 @@ public class ProductController {
 	@Autowired
 	CategoryDAO catedao;
 
-	@RequestMapping(value = "/addproduct")
+	@RequestMapping(value = "addproduct")
 	public String getaddproductpage(Model M) {
 		M.addAttribute("errstatus", false);
 		M.addAttribute("succstatus", false);
@@ -40,7 +40,7 @@ public class ProductController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/productdisp")
+	@RequestMapping(value = "productdisp")
 	public String showallproductpage(Model M) {
 		M.addAttribute("productlist", productadd.showallProduct());
 		M.addAttribute("ProductDisp", true);
@@ -48,14 +48,14 @@ public class ProductController {
 	}
 	
 
-	@RequestMapping(value = "/oneproductdisp")
+	@RequestMapping(value = "oneproductdisp")
 	public String showoneproductpage(Model M, @RequestParam("productid") int productid) {
 		M.addAttribute("product", productadd.showProduct(productid));
 		M.addAttribute("OneProductDisp", true);
 		return "index";
 	}
 
-	@RequestMapping(value = "/editproduct")
+	@RequestMapping(value = "editproduct")
 	public String geteditproductpage(Model M, @RequestParam("productid") int productid) {
 		M.addAttribute("errstatus", false);
 		M.addAttribute("succstatus", false);
@@ -67,7 +67,7 @@ public class ProductController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/removeproduct")
+	@RequestMapping(value = "removeproduct")
 	public String getremoveproductpage(Model M, @RequestParam("productid") int productid) {
 		productadd.deleteProduct(productid);
 		M.addAttribute("errstatus", false);
@@ -80,7 +80,7 @@ public class ProductController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/productadd", method = RequestMethod.POST)
+	@RequestMapping(value = "productadd", method = RequestMethod.POST)
 	public String postproductpage(@Valid @ModelAttribute("product") Product newproduct, BindingResult result, Model M) {
 		try {
 			if (result.hasErrors()) {

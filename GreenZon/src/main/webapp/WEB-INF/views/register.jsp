@@ -97,8 +97,8 @@ button:hover {
 </c:if>
 <form:form modelAttribute="customer" action="${url}" method="post">
 	<label> <form:input type="text" placeholder="Enter name"
-			name="uname" path="name"/> <form:errors
-			path="name" cssStyle="color:red" ></form:errors>
+			name="uname" path="name" /> <form:errors path="name"
+			cssStyle="color:red"></form:errors>
 		<div class="line-box">
 			<div class="line"></div>
 		</div>
@@ -111,7 +111,7 @@ button:hover {
 	</div>
 	<br>
 	<br>
-	
+
 	<form:input type="text" placeholder="Enter Phone Number" name="phno"
 		path="phoneNo" />
 	<form:errors path="phoneNo" cssStyle="color:red"></form:errors>
@@ -127,7 +127,7 @@ button:hover {
 	<div class="line-box">
 		<div class="line"></div>
 	</div>
-	
+
 
 	<button type="submit">submit</button>
 </form:form>

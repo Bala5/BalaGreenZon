@@ -17,7 +17,15 @@ public class Customer
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	int cartid;
 	
- @Column(unique=true,nullable=false)
+ public int getCartid() {
+		return cartid;
+	}
+
+	public void setCartid(int cartid) {
+		this.cartid = cartid;
+	}
+
+@Column(unique=true,nullable=false)
  @NotEmpty(message="Email Id cannot blank")
  @Email(regexp="[a-z0-9_.$]+@[a-z]+\\.[a-z]{2,3}",message="please enter the valid Email id")
  private String emailid;

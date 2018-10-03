@@ -19,7 +19,7 @@ public class CategoryController
 {
 	@Autowired
 	CategoryDAO categoryadd;
-	@RequestMapping(value = "/addcategory")
+	@RequestMapping(value = "addcategory")
 	public String getaddcategorypage(Model M) 
 	{
 		M.addAttribute("errstatus",false);
@@ -31,7 +31,7 @@ public class CategoryController
 		return "index";			
 	}
 	
-	@RequestMapping(value = "/editcat")
+	@RequestMapping(value = "editcat")
 	public String geteditcategorypage(Model M,@RequestParam("catid")int catid) 
 	{
 		M.addAttribute("errstatus",false);
@@ -43,7 +43,7 @@ public class CategoryController
 		return "index";			
 	}
 	
-	@RequestMapping(value = "/removecat")
+	@RequestMapping(value = "removecat")
 	public String getremovetcategorypage(Model M,@RequestParam("catid")int catid) 
 	{
 		categoryadd.deleteCategory(catid);
@@ -57,7 +57,7 @@ public class CategoryController
 	}
 	
 	
-	@RequestMapping(value = "/categoryadd",method=RequestMethod.POST)
+	@RequestMapping(value = "categoryadd",method=RequestMethod.POST)
 	public String postcategorypage(@Valid @ModelAttribute("category")Category newcategory,BindingResult result,Model M)
 	{
 		if(result.hasErrors())

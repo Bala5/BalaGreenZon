@@ -1,7 +1,4 @@
-
-<!-- #region Jssor Slider Begin -->
-<!-- Generator: Jssor Slider Maker -->
-<!-- Source: https://www.jssor.com -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="resources/js/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script src="resources/js/jssor.slider-27.4.0.min.js"
 	type="text/javascript"></script>
@@ -333,7 +330,6 @@
 			});
 </script>
 <style>
-/*jssor slider loading skin spin css*/
 .jssorl-009-spin img {
 	animation-name: jssorl-009-spin;
 	animation-duration: 1.6s;

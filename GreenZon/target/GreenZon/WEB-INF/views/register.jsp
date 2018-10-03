@@ -1,6 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:url value='/registeruser' var="url"></c:url>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body {
 	background: #C5E1A5;
@@ -96,8 +97,8 @@ button:hover {
 </c:if>
 <form:form modelAttribute="customer" action="${url}" method="post">
 	<label> <form:input type="text" placeholder="Enter name"
-			name="uname" path="name"/> <form:errors
-			path="name" cssStyle="color:red" ></form:errors>
+			name="uname" path="name" /> <form:errors path="name"
+			cssStyle="color:red"></form:errors>
 		<div class="line-box">
 			<div class="line"></div>
 		</div>
@@ -110,7 +111,7 @@ button:hover {
 	</div>
 	<br>
 	<br>
-	
+
 	<form:input type="text" placeholder="Enter Phone Number" name="phno"
 		path="phoneNo" />
 	<form:errors path="phoneNo" cssStyle="color:red"></form:errors>
@@ -126,7 +127,7 @@ button:hover {
 	<div class="line-box">
 		<div class="line"></div>
 	</div>
-	
+
 
 	<button type="submit">submit</button>
 </form:form>
