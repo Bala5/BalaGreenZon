@@ -35,7 +35,9 @@ http://www.springframework.org/schema/security/spring-security.xsd">
 			username-parameter="usename" password-parameter="userpassword"
 			authentication-success-forward-url="/loginsucess"
 			authentication-failure-url="/flogin" />
-			<security:logout invalidate-session="true" logout-success-url="/" logout-url="/logout"/>
+
+		
+
 		<security:csrf disabled="true" />
 
 

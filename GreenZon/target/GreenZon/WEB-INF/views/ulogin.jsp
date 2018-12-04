@@ -3,6 +3,9 @@
 	<c:if test="${lerrstatus}">
 		<span class="alert alert-danger form-control">Username Or Password Incorrect</span>
 	</c:if>
+		<c:if test="${logoutstate}">
+		<span class="alert alert-Success form-control">Loguot Successfuly</span>
+	</c:if>
 	<form class="form-signin" action="perform_login" method="POST">
 		<span id="reauth-email" class="reauth-email"></span> <input
 			type="email" id="usename" class="form-control"
